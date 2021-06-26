@@ -16,4 +16,17 @@
     margin-top: 8px;
     font-size: 1.8em;
     color: white;
+    text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 900px){
+    .noneContentContainer p{
+        font-size: 1.2em;
+    }
+    .noneContentContainer svg{
+        font-size: 1.5em;
+    }
+    .noneContentContainer{
+        height: 20vh;
+    }
 }

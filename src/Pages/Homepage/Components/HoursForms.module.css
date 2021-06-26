@@ -18,3 +18,9 @@
 .dateRegister p, .dayContainer p{
     margin-bottom: 16px;
 }
+
+@media (min-width: 375px) and (max-width: 900px){
+    .formsContainer{
+        padding: 0px 12px;
+    }
+}

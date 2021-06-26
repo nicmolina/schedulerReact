@@ -79,11 +79,29 @@
     color: #ff5555;
 }
 
-@media (max-width: 1300px){
+.workedHoursDetails{
+    font-size: 2em;
+    padding-top: 2em;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 2em;
+}
+
+@media (min-width: 375px) and (max-width: 1300px){
     .workHoursFade{
         grid-template-areas: "arriveTime" "lunchBreak" "exitTime";
     }
     .workedHoursInfo{
         margin-bottom: 1em;
+    }
+
+    .workedHoursDetails{
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .registerTitle h1{
+        font-size: 1.2em;
     }
 }

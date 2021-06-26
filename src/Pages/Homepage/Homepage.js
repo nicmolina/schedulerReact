@@ -61,7 +61,7 @@ const HomePage = () => {
             }
 
             <div className={styles.workedHoursContainer}>
-                <h1 style={{ fontSize: '2em', paddingTop: '2em', lineHeight: '2em', color: 'var(--white-color)', textAlign: 'center' }}>
+                <h1 className={styles.workedHoursDetails}>
                     <WorkIcon/> Total worked hours: {data?.hours? parseInt(data?.hours) : 0}
                 </h1>
                 {data?.hours < 8? <p className={styles.hoursAvalation}>Your working hours are below expected on this day!</p> : null}
