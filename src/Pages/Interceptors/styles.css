@@ -1,0 +1,26 @@
+.unauthContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(-269deg, #DD5E89 0%, #F7BB97 100%);
+}
+
+.unauthContainer svg{
+    fill: var(--main-color);
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.unauthContainer h1:hover, .unauthContainer svg:hover{
+    fill: var(--white-color);
+    color: var(--white-color);
+}
+
+.unauthContainer h1{
+    font-size: 2em;
+    cursor: pointer;
+    line-height: 2em;
+    color: var(--main-color);
+}

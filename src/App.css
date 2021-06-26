@@ -1,0 +1,55 @@
+@font-face {
+    font-family: FiraCodeRegular;
+    src: url(./Assets/Fonts/FiraCode-Regular.ttf);
+}
+
+@font-face {
+  font-family: Objektiv;
+  src: url(./Assets/Fonts/Objektiv.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, #root, #app{
+}
+
+body, h1, h2, p, ul, li, a, span {
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type="radio"], button {
+  outline: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  width: 100%;
+}
+
+/* Loading */
+.loading-container{
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.loading-rotate{
+  animation: spin 1s linear infinite;
+}

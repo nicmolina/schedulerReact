@@ -1,0 +1,32 @@
+.headerContainer{
+    background: linear-gradient(-269deg, #DD5E89 0%, #F7BB97 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    flex-wrap: wrap;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.userSpace{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.popoverSelect{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 12px 24px;
+    color: white;
+    cursor: pointer;
+    background-color: var(--main-color);
+}

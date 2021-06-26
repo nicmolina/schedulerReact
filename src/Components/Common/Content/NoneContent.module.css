@@ -1,0 +1,19 @@
+.noneContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    height: 50vh;
+    background-color: var(--main-color);
+}
+
+.noneContentContainer svg{
+    font-size: 3em;
+}
+
+.noneContentContainer p{
+    margin-top: 8px;
+    font-size: 1.8em;
+    color: white;
+}

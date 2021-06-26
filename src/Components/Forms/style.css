@@ -1,0 +1,8 @@
+/* Inputs */
+
+.buttonFilter {
+    background-color: var(--main-lightest-color);
+    border: 2px solid #EBEBEB;
+    padding: 5px;
+    width: fit-content;
+}

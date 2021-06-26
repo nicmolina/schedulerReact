@@ -1,0 +1,89 @@
+.homePageContainer{
+    background-color: var(--main-color);
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+}
+
+.workedHoursContainer{
+    height: fit-content;
+    display: flex;
+    margin-top: 4em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workedHoursInfo{
+    background-color: #4d5067;
+    border: 1px solid var(--pink-color);
+    border-radius: 8px;
+    height: 12em;
+    text-align: center;
+    width: 25em;
+    padding: 12px 32px;
+    animation: transition 2.5s;
+}
+
+.arriveTime{
+    grid-area: arriveTime;
+}
+
+.lunchBreak{
+    grid-area: lunchBreak;
+}
+
+.exitTime{
+    grid-area: exitTime;
+}
+
+.workedHoursInfo:hover{
+    transform: scale(1.02);
+}
+
+.workedHoursInfo h1{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--white-color);
+}
+
+.workedHoursInfo span{
+    color: var(--pink-color);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.registerTitle h1{
+    font-size: 2em;
+    color: var(--white-color);
+}
+
+.workHoursFade{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    place-content: center;
+    grid-template-areas: "arriveTime lunchBreak exitTime";
+    column-gap: 2em;
+    width: 100%;
+}
+
+.specificDay{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.hoursAvalation{
+    padding: 16px;
+    color: #ff5555;
+}
+
+@media (max-width: 1300px){
+    .workHoursFade{
+        grid-template-areas: "arriveTime" "lunchBreak" "exitTime";
+    }
+    .workedHoursInfo{
+        margin-bottom: 1em;
+    }
+}

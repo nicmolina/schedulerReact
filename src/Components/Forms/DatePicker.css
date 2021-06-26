@@ -1,0 +1,113 @@
+.calendar-single-date .DayPicker_weekHeader_li {
+    height: 25px !important;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.w-200px svg {
+    cursor: pointer;
+}
+
+.calendar-single-date .CalendarDay__today:hover {
+    background: linear-gradient(white 0, white 8%, white 8%, white 0 92%, white 50%, white 50%);
+}
+
+.calendar-single-date .DayPickerNavigation {
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+}
+
+.calendar-single-date path {
+    fill: var(--main-color);
+}
+
+.DayPicker_weekHeader {
+    top: 55px;
+    padding: 7px 13px 0px 13px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.calendar-single-date .CalendarMonth_caption {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Objektiv';
+}
+
+.calendar-single-date .CalendarDay, .CalendarDay__default {
+    background-color: transparent;
+    font-size: 1em;
+    border: 0;
+}
+
+.calendar-single-date .CalendarDay:hover .day-element {
+    background: var(--main-color) !important;
+    color: white !important;
+    padding-top: 5px;
+    border: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.calendar-single-date .CalendarDay__selected .day-element {
+    background: var(--main-color) !important;
+    color: white !important;
+    padding-top: 5px;
+    border: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.calendar-single-date .CalendarDay__hovered_span:hover, .calendar-single-date .CalendarDay__hovered_span, .calendar-single-date .CalendarDay__selected_span:active, .CalendarDay__selected_span {
+    background: linear-gradient(white 0, white 8%, var(--main-lightest-color) 8%, var(--main-lightest-color) 92%, white 92%, white 100%);
+    color: var(--main-color);
+    border-left: 0;
+    border-right: 0;
+}
+
+.calendar-single-date .CalendarDay__today .day-element {
+    background: white;
+    padding-top: 3px;
+    border: 1.5px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--black-color);
+    height: 30px;
+    width: 30px;
+}
+
+small {
+    font-size: 1em;
+}
+
+.calendar-single-date .DateInput {
+    display: none;
+}
+
+.calendar-single-date .SingleDatePickerInput__withBorder {
+    border: none;
+}
+
+.calendar-single-date .DayPicker__withBorder {
+    box-shadow: none;
+}
+
+.calendar-single-date .SingleDatePicker {
+    float: left;
+}
+
+.calendar-single-date .SingleDatePicker_picker {
+    position: initial;
+}
+
+.calendar-single-date .DateInput_fangStroke {
+    display: none;
+}
+
+.DayPickerNavigation_button__horizontalDefault{
+    top: -5px;
+}

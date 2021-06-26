@@ -1,0 +1,97 @@
+body {
+    font-family: 'Objektiv';
+    /* Main Colors */
+    --main-color: #282a36;
+    --comment-color: #6272a4;
+
+    /* Text Colors */
+    --pink-color: #ff79c6;
+    --white-color: #FFFFFF;
+    --black-color: rgba(0,0,0,0.87);
+    --grey-light-color: #E5E5E5;
+    --grey-medium-color: rgba(0,0,0,0.60);
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+/* Typography */
+.headline-1, h1 {
+    font-size: 3.375em; /* 54px */
+    line-height: 4.625em; /* 74px */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.subtitle-1 {
+    font-size: 1em; /* 16px */
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5em; /* 24px */
+}
+
+.subtitle-2 {
+    font-size: 1em; /* 16px */
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5em; /* 24px */
+}
+
+.body-1 {
+    font-size: 1em; /* 16px */
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.375em; /* 22px */
+}
+
+.body-2, .user-selected span {
+    font-size: 0.875em; /* 14px */
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.1875em; /*19px */
+}
+
+.headline-1, h1, .headline-2, h2, .headline-3, h3, .headline-4, h4, .headline-5, h5, .headline-6, h6, .subtitle-1, .subtitle-2, .body-1, .body-2, .captiom, .overline, .underline {
+    color: var(--black-color);
+}
+
+.headline-32 {
+    font-size: 2em; /* 32px */
+    font-weight: 600; /* semibold */
+    line-height: 1.5em; /* 48px */
+    /* color: var(--grey-02-color); */
+    color: var(--black-color);
+}
+
+.black-color {
+    color: var(--black-color);
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15); 
+}
+  
+/* Margens */
+.request-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.request-message {
+    margin-top: 10px;
+    font-size: 1.5em; /* 24px */
+    line-height: 33px;
+    text-align: center;
+    color: var(--grey-medium-color);
+}

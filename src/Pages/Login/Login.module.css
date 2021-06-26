@@ -1,0 +1,41 @@
+.loginPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-269deg, #DD5E89 0%, #F7BB97 100%);
+}
+
+.actionContainer{
+    font-size: 28px;
+    height: fit-content;
+    font-weight: bold;
+    color: var(--white-color);
+    padding: 8px 0px 32px 0px;
+}
+
+.loginAction{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginAction:hover{
+    color: var(--pink-color);
+}
+
+.loginCard{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+
+.loginCard h1{
+    font-size: 32px;
+    height: fit-content;
+    font-weight: bold;
+    color: var(--white-color);
+}
