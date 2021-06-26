@@ -104,4 +104,22 @@
     .registerTitle h1{
         font-size: 1.2em;
     }
+    .workedHoursInfo{
+        width: 16em;
+    }
+    .hoursAvalation{
+        text-align: center;
+    }
+
+    .workedHoursInfo h1{
+        text-align: center;
+        font-size: 1.5em;
+        color: var(--white-color);
+    }
+    
+    .workedHoursInfo span{
+        color: var(--pink-color);
+        font-size: 1.4em;
+        font-weight: bold;
+    }
 }
