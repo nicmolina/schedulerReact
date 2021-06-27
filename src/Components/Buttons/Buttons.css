@@ -73,27 +73,6 @@
     fill: var(--white-color);
 }
 
-
-.save_button_Container{
-    width: fit-content;
-    margin: 20px 0px!important;
-}
-
-.save_button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 24px;
-    font-weight: 600;
-    cursor: pointer;
-    /* Base/base */
-
-    color: #ffffff;
-    background: #1B458D;
-    border-radius: 50px;
-}
-
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
@@ -101,19 +80,4 @@
 
 .rotate{
     animation: spin 1s linear infinite;
-}
-
-.savebutton_loadingContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.savebutton_loadingContainer svg{
-    height: 15px;
-    width: 15px;
-}
-
-.savebutton_loadingContainer path{
-    fill: #ffffff;
 }

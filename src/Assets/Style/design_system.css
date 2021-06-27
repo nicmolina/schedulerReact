@@ -3,9 +3,9 @@ body {
     /* Main Colors */
     --main-color: #282a36;
     --comment-color: #6272a4;
-
+    --pink-color: #DD5E89;
+    
     /* Text Colors */
-    --pink-color: #ff79c6;
     --white-color: #FFFFFF;
     --black-color: rgba(0,0,0,0.87);
     --grey-light-color: #E5E5E5;
@@ -18,39 +18,39 @@ h1, h2, h3, h4, h5 {
 
 /* Typography */
 .headline-1, h1 {
-    font-size: 3.375em; /* 54px */
-    line-height: 4.625em; /* 74px */
+    font-size: 3.375em; 
+    line-height: 4.625em; 
     font-weight: 400;
     font-style: normal;
 }
 
 
 .subtitle-1 {
-    font-size: 1em; /* 16px */
+    font-size: 1em; 
     font-weight: 700;
     font-style: normal;
-    line-height: 1.5em; /* 24px */
+    line-height: 1.5em;
 }
 
 .subtitle-2 {
-    font-size: 1em; /* 16px */
+    font-size: 1em; 
     font-weight: 600;
     font-style: normal;
-    line-height: 1.5em; /* 24px */
+    line-height: 1.5em; 
 }
 
 .body-1 {
-    font-size: 1em; /* 16px */
+    font-size: 1em; 
     font-style: normal;
     font-weight: normal;
-    line-height: 1.375em; /* 22px */
+    line-height: 1.375em; 
 }
 
 .body-2, .user-selected span {
-    font-size: 0.875em; /* 14px */
+    font-size: 0.875em; 
     font-style: normal;
     font-weight: normal;
-    line-height: 1.1875em; /*19px */
+    line-height: 1.1875em; 
 }
 
 .headline-1, h1, .headline-2, h2, .headline-3, h3, .headline-4, h4, .headline-5, h5, .headline-6, h6, .subtitle-1, .subtitle-2, .body-1, .body-2, .captiom, .overline, .underline {
@@ -58,10 +58,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .headline-32 {
-    font-size: 2em; /* 32px */
-    font-weight: 600; /* semibold */
-    line-height: 1.5em; /* 48px */
-    /* color: var(--grey-02-color); */
+    font-size: 2em; 
+    font-weight: 600; 
+    line-height: 1.5em; 
     color: var(--black-color);
 }
 
@@ -79,7 +78,7 @@ h1, h2, h3, h4, h5 {
     background: rgba(0, 0, 0, 0.15); 
 }
   
-/* Margens */
+/* Margins */
 .request-container {
     display: flex;
     flex-direction: column;

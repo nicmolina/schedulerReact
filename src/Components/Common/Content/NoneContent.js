@@ -7,7 +7,7 @@ const NoneContent = () => {
     return (
         <div className={styles.noneContentContainer}>
             <AssignmentIndIcon/>
-            <p>Ops parece que você ainda não cadastrou nenhum horário hoje</p>
+            <p>Ops, looks like you dont have working hours registered on this day</p>
         </div>
     )
 }

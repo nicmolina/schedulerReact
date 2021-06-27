@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BASE_URL = 'https://schedulerbackend.herokuapp.com';
 
 function getToken() {
