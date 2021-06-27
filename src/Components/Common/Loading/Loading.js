@@ -4,7 +4,7 @@ import CachedIcon from '@material-ui/icons/Cached';
 
 const Loading = ({text}) => {
     return (
-        <div className={"loadingContainer"}>
+        <div aria-label='loadingContainer' className={"loadingContainer"}>
             <CachedIcon className={"rotate"}/>
             <p>{text}</p>
         </div>

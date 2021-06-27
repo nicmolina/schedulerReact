@@ -28,7 +28,7 @@ const Header = () => {
     };
 
     return (
-        <header className={styles.headerContainer}>
+        <header aria-label={'headerContainer'} className={styles.headerContainer}>
             <div className={styles.title}>
                 WorkSpace Hours+
             </div>
@@ -54,7 +54,7 @@ const Header = () => {
                 }}
             >
                 <div className={styles.popoverSelect}>
-                    <div onClick={() => {userLogout()}}>
+                    <div aria-label='logoutContainer' onClick={() => {userLogout()}}>
                         <div>
                             Sair
                         </div>

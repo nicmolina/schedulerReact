@@ -33,7 +33,7 @@ const HourPicker = ({ id, label, value, setValue, backgroundPageColor = false })
     const [open, setOpen] = React.useState(false);
     const [tempTime, setTempTime] = React.useState(null);
     const classes = useStyles();
-    console.log('valor', value);
+    
     return (
         <div style={{ height: 'fit-content' }}>
 

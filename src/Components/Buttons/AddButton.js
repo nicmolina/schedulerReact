@@ -4,7 +4,7 @@ import AddBoxIcon from '@material-ui/icons/AddBox';
 import CachedIcon from '@material-ui/icons/Cached';
 import './Buttons.css';
 
-const ConfirmButton = ({ id, text, loading, edit, config, handleClick, error = false }) => {
+const AddButton = ({ id, text, loading, handleClick}) => {
 
     return (
         <div style={{display: 'flex', justifyContent: 'center', paddingTop: '12px'}}>
@@ -17,9 +17,9 @@ const ConfirmButton = ({ id, text, loading, edit, config, handleClick, error = f
         </div>
     )
 }
-export default ConfirmButton;
+export default AddButton;
 
-ConfirmButton.propTypes = {
+AddButton.propTypes = {
     id: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     handleAddMenuFile: PropTypes.func

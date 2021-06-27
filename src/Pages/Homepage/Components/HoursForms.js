@@ -3,7 +3,7 @@ import moment from 'moment';
 import DatePicker from '../../../Components/Forms/DatePicker';
 import TimePicker from '../../../Components/Forms/TimePicker';
 import useService from '../../../Hooks/useService';
-import ConfirmButton from '../../../Components/Buttons/ConfirmButton';
+import AddButton from '../../../Components/Buttons/AddButton';
 import styles from './HoursForms.module.css';
 import { AuthContext } from '../../../Context/UserContext';
 import { toast } from 'react-toastify';
@@ -92,7 +92,7 @@ const HoursForms = ({specificData, setSpecificDay}) => {
                 </div>
             </div>
 
-            <ConfirmButton
+            <AddButton
                 handleClick={() => {
                     createWorkDay();
                 }}

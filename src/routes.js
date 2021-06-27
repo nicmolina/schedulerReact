@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import { AuthContext } from './Context/UserContext';
 import Paths from './Utils/Path';
 import Login from './Pages/Login/Login';
 import Unauthorizated from './Pages/Interceptors/Unauthorized';

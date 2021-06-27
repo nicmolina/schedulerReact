@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const InputField = ({ label, limit, type, height, name, value, onChange, error, onBlur, shrink = false, fullWidth = true, placeholder = "", isValid = false, successMessage, endAdornment, startAdornment, backgroundPageColor = false }) => {
+const InputField = ({ label, limit, type, name, value, onChange, error, onBlur, shrink = false, fullWidth = true, placeholder = "", isValid = false, successMessage, endAdornment, startAdornment, backgroundPageColor = false }) => {
     const classes = useStyles();
 
     if (limit === undefined) {
@@ -48,6 +48,7 @@ const InputField = ({ label, limit, type, height, name, value, onChange, error, 
 
     return (
         <TextField
+            aria-label='inputFieldContainer'
             label={label}
             id={name}
             type={type}
@@ -65,9 +66,9 @@ const InputField = ({ label, limit, type, height, name, value, onChange, error, 
             inputProps={
                 {
                     maxLength: limit,
-                    autocomplete: 'new-password',
+                    autoComplete: 'new-password',
                     form: {
-                        autocomplete: 'off',
+                        autoComplete: 'off',
                     },
                 }
             }
