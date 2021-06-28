@@ -1,3 +1,7 @@
+/**Path file
+ * set routes for the portal
+ */
+
 import HomePage from '../Pages/Homepage/Homepage';
 
 const Routes = [

@@ -1,3 +1,18 @@
+/** HoursForms component
+ * @const HoursForms
+ * component that controll the creation of new working days using
+ * the components of datepickers(only for days) and using the components of 
+ * timepickers(only for hours). It uses the endpoint of CREATE_WORK_DAY for 
+ * trying to create the new workday object(with lunchbreak, arrivetime, exittime, day, and the 
+ * userId of the employee)
+ * @param specificData
+ * Homepage page passes specificData that is displayed.
+ * @param setSpecificDay
+ * Homepage page passes the param for changing the day that is displayed
+ * so it controls when the page needs to be reloaded. Ex: if you add a working day for 28/09
+ * the page its reloaded with the hours of 28/09.
+ */
+
 import React from 'react';
 import moment from 'moment';
 import DatePicker from '../../../Components/Forms/DatePicker';

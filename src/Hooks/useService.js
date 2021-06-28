@@ -1,3 +1,18 @@
+/** Hook useService
+ * @const useService
+ * hooks for req and response handling.
+ * @returns
+ * data: object that contains response.data, so component can have control when the info will be rendered;
+ * setData: function that updates response data;
+ * loading: bool that returns if the requisition still on await ;
+ * setLoading: function that changes loading;
+ * error: if the response was unsuccessfully it returns the error;
+ * setError: change the error;
+ * errorMessage: returns the errorMessage that was stablished by the backend;
+ * request: callback where you can include your options of the specific component 
+ * and the data, error, errorMessage will be updated if needed.
+ */
+
 import React from 'react';
 import axios from "axios";
 import { removeToken } from '../Utils/TokenStorage';
@@ -23,7 +38,6 @@ const useService = () => {
 
     service.interceptors.response.use((response) => {
       setErrorMessage(undefined)
-      console.log('int ', response)
       return response
     }, function (error) {
       var msg = error?.response?.data?.message;
@@ -52,9 +66,6 @@ const useService = () => {
 
     } catch (err) {
 
-      console.log('errrrrrrrrrrr', json)
-
-      // json = null;
       setError(err);
       return data;
 
@@ -64,7 +75,7 @@ const useService = () => {
         setData(formatResponse);
       }
       else {
-        if(json != null)
+        if (json != null)
           setData(json);
       }
 

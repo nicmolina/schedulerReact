@@ -1,3 +1,11 @@
+/**
+ * @const Header
+ * component Header after login;
+ * uses cookies for always have the name of the user displayed;
+ * uses materialui popover when user needs to logout(this is why we have the anchorEl);
+ * classes = useStyles() is stablished so we can change styles of materialui component
+ */
+
 import React from 'react';
 import { AuthContext } from '../../../Context/UserContext';
 import styles from './Header.module.css';

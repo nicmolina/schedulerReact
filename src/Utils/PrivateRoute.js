@@ -1,3 +1,11 @@
+/**PrivateRoute file
+ * set private routes with authentication
+ * @const ProtectedRoute
+ * set routes that will not be able to access without login
+ * @param props
+ * receives components that will be enable, with path and routes that were set on the path file
+ */
+
 import React from 'react';
 import { AuthContext } from '../Context/UserContext';
 import { Route } from 'react-router-dom';

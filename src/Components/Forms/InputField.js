@@ -1,3 +1,39 @@
+/** InputFieldComponent
+ * @const InputField
+ * input component that controls strings, like email, name and password. Also is used to display
+ * the day or the hour that was picked on datepicker or timepicker component.
+ * @param label
+ * label string that will be displayed on input.
+ * @param limit
+ * string limit for input.
+ * @param type
+ * type changing on material ui component, its used as 'password' and 'text'
+ * @param name
+ * name for the input related
+ * @param value
+ * value that will be displayed on input
+ * @param onChange
+ * function that will handle after changes on value
+ * @param onBlur
+ * function that will handle onBlur of specific input, it can calls validation
+ * @param shrink
+ * if is necessary that component shrink will be passed, otherwise its false by default
+ * @param fullWidth
+ * if is necessary that component have a different width of others, otherwise its true by default
+ * @param placeholder
+ * string that will be displayed on input placeholder
+ * @param isValid
+ * if is necessary that component have validation on the input text
+ * @param successMessage
+ * related to validation on the component, its a feedback when validation is needed
+ * @param endAdornment
+ * icon that will be displayed on the end of the input
+ * @param startAdornment
+ * icon that will be displayed on the start of the input
+ * @param backgroundPageColor
+ * bool that controls material ui component property if needed
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';

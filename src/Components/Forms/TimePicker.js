@@ -1,3 +1,18 @@
+/** TimePicker component
+ * @const TimePicker
+ * input component that controls 'hour'(its used for arriveTime, exitTime and for LunchBreak).
+ * @param id
+ * id that will be passed so we have control on that specific id.
+ * @param label
+ * label string that will be displayed on time input modal.
+ * @param value
+ * value that will be displayed and changed on input, for this component it is an hour value.
+ * @param setValue
+ * updates the value that is displayed on the input.
+ * @param backgroundPageColor
+ * bool that can change background on material ui component.
+ */
+
 import React from 'react';
 import InputField from './InputField';
 import { TimePicker } from 'material-ui-time-picker';
@@ -61,7 +76,7 @@ const HourPicker = ({ id, label, value, setValue, backgroundPageColor = false })
                     }} />
                 <DialogActions>
                     <Button className={classes.cancelButton} onClick={() => setOpen(false)}>
-                        Cancelar
+                        Return
                     </Button>
                     <Button
                         className={classes.saveButton}
@@ -69,7 +84,7 @@ const HourPicker = ({ id, label, value, setValue, backgroundPageColor = false })
                             setOpen(false);
                             setValue(tempTime);
                         }} color='primary'>
-                        Salvar
+                        Save
                     </Button>
                 </DialogActions>
             </Dialog>

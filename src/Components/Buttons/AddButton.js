@@ -1,3 +1,16 @@
+/** AddButton component
+ * @const AddButton
+ * component for adding working hour.
+ * @param id 
+ * id that will be passed so we have control on hmtlFor that specific id.
+ * @param text
+ * text that will be displayed on the button.
+ * @param loading
+ * bool that will be passed so the button can have the loading displayed.
+ * @param handleClick
+ * function that will handle onClick of that button.
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import AddBoxIcon from '@material-ui/icons/AddBox';

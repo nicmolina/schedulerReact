@@ -1,3 +1,18 @@
+/** Hook useForm
+ * @const useForm
+ * hooks for validation and setting the usestates that are used on the inputs;
+ * @param type
+ * can be 'title', 'number' and 'select', on title there can be no '';
+ * number is when you need to validate input of only numbers;
+ * select same as number but for select options.
+ * @returns
+ * value: value of the input;
+ * setValue: function that can change the value of input ;
+ * onChange: function for input changing;
+ * validate: function that returns error if the value its outside of the domain;
+ * onBlur: function to validate that value.
+ */
+
 import React from 'react';
 
 const types = {

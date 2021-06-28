@@ -1,3 +1,20 @@
+/** DatePicker component
+ * @const DatePicker
+ * input component that controls 'day'(its used for arriveDate, exitDate and also to set a specific day).
+ * @param id 
+ * id that will be passed so we have control on that specific id.
+ * @param label
+ * label string that will be displayed on input.
+ * @param value
+ * value that will be displayed and changed on input.
+ * @param setValue
+ * updates the value of the day.
+ * @param backgroundPageColor
+ * values that can change background on material ui component.
+ * @param enableButtons
+ * set if it will save and cancel button on day pick component.
+ */
+
 import React from 'react';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
@@ -100,14 +117,13 @@ const DatePicker = ({ id, label, value, setValue, backgroundPageColor = false, e
                 {enableButtons &&
                     <DialogActions>
                     <Button onClick={closeModal} className={classes.cancelButton}>
-                        Cancelar
+                        Return
                     </Button>
                     <Button className={classes.saveButton} onClick={() => {
                         closeModal();
-                        console.log("tempHour", tempHour);
                         setDate(tempHour);
                     }} color='primary'>
-                        Salvar
+                        Save
                     </Button>
                 </DialogActions>}
             </Dialog>

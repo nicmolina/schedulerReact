@@ -1,3 +1,16 @@
+/** Context for userLogin
+ * 
+ * @const UserContext
+ * @param children : where the components will be passed so the context is within each one of them
+ * @returns 
+ * userData: user object that contains name, token and profiledid of each user
+ * setUserData: react setstate function for changing user object
+ * isAuthentication: bool that controls private routing
+ * userLogin: function that setup the userData and cookies and windowstorage, after the setup the user can access /homepage route
+ * userLogout: function that clears cookies and localstorage 
+ * cookies: constructor that contains bearerToken, userId and userName for usage on endpoints
+ */
+
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Cookies from 'universal-cookie';

@@ -1,3 +1,11 @@
+/** HoursPage component
+ * @const HomePage
+ * component that displays info for each working day, with arrive time, expected hours, 
+ * lunch break, exit time and working hours. Specific day controls wich workingday info will be
+ * displayed, it also uses useService request for having the info of the specific day. Also 
+ * use cookies constructor from usecontext for doing the request with the userId of the employee.
+ */
+
 import React from 'react';
 import Header from '../../Components/Common/Header/Header';
 import styles from './Homepage.module.css';

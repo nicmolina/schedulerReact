@@ -1,3 +1,12 @@
+/** Login component
+ * @const Login
+ * component that will be responsible for redirecting the user to HomePage after the login or the register. It 
+ * uses useForm hooks so it can have control on email, password and name forms. Also calls userLogin from 
+ * AuthContext to setup the info after the creation or the login of a user. For login uses AUTHENTICATE endpoint
+ * and REGISTER_USER endpoint from endpoints utils. isLogin is for controlling if it will be a user register or a
+ * login.
+ */
+
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -9,6 +18,7 @@ import useService from '../../Hooks/useService';
 import { AUTHENTICATE, REGISTER_USER } from '../../Utils/Endpoints';
 import { AuthContext } from '../../Context/UserContext';
 import Button from '../../Components/Buttons/Button';
+
 
 const Login = () => {
     const email = useForm('title');
