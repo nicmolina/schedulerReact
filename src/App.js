@@ -11,7 +11,7 @@ const App = () => {
   const [theme, setTheme] = React.useState({
     palette: {
       primary: {
-        main: "#282a36", // main blue
+        main: "#282a36", 
         mainLight: '#ff79c6'
       },
       secondary: {
